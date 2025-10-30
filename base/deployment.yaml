@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: worker-app-deployment
+  labels:
+    app: voting-app
+spec:
+  replicas: 3
+  selector:
+    matchLabel:
+      app: demo-voting-app
+  template:
+    metadata:
+      labels:
+        app: voting-app
+    spec:
+     containers:
+       - name: worker-app
+         image: jalaldaoud/example-voting-app-worker
+
+   

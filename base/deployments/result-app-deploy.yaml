@@ -20,6 +20,6 @@ spec:
     spec: 
       containers:
         - name: result-app 
-          image: jalaldaoud/votingresult:v2
+          image: jalaldaoud/votingresult:latest
           ports:
            - containerPort: 80

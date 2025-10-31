@@ -3,12 +3,12 @@ kind: Deployment
 metadata:
   name: worker-app-deployment
   labels:
-    app: demo-voting-app
+    app: voting-app
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: demo-voting-app
+      app: voting-app
   template:
     metadata:
       labels:

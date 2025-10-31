@@ -16,6 +16,6 @@ spec:
     spec:
      containers:
        - name: worker-app
-         image: jalaldaoud/example-voting-app-worker:v2
+         image: jalaldaoud/example-voting-app_worker
 
    
